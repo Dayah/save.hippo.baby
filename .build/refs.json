@@ -971,5 +971,74 @@
 "volume": "9",
 "issue": "7",
 "pages": "831-834"
+},
+"doi:10.1111/j.1439-0264.1975.tb00647.x": {
+"authors": [
+"Langer P"
+],
+"title": "Macroscopic Anatomy of the Stomach of the Hippopotamidae GRAY, 1821",
+"journal": "Anatomia, Histologia, Embryologia: Journal of Veterinary Medicine Series C",
+"year": 1975,
+"volume": "4",
+"issue": "4",
+"pages": "334-359"
+},
+"doi:10.1111/j.1469-7998.1982.tb02066.x": {
+"authors": [
+"Clemens ET",
+"Maloiy GMO"
+],
+"title": "The digestive physiology of three East African herbivores: the elephant, rhinoceros and hippopotamus",
+"journal": "Journal of Zoology",
+"year": 1982,
+"volume": "198",
+"issue": "2",
+"pages": "141-156"
+},
+"doi:10.1292/jvms.19-0621": {
+"authors": [
+"SADAN M",
+"EL-SHAFAEY ES",
+"AL-SOBAYIL F"
+],
+"title": "Diagnosis and treatment of foreign bodies swallowing syndrome in camels (&lt;i&gt;Camelus dromedarius&lt;/i&gt;) with special reference to the role of mineral deficiency",
+"journal": "Journal of Veterinary Medical Science",
+"year": 2020,
+"volume": "82",
+"issue": "8",
+"pages": "1097-1103"
+},
+"url:https://www.cornare.gov.co/noticias-corporativas/despues-de-ser-declarados-animales-exoticos-e-invasores-una-hembra-de-hipopotamo-fue-esterilizada-de-manera-exitosa-en-colombia/": {
+"authors": [
+"Cornare"
+],
+"title": "Después de ser declarados animales exóticos e invasores, una hembra de hipopótamo fue esterilizada de manera exitosa en Colombia",
+"journal": "Corporación Autónoma Regional de las Cuencas de los Ríos Negro y Nare",
+"year": 2022,
+"volume": null,
+"issue": null,
+"pages": null
+},
+"url:https://www.cornare.gov.co/noticias-corporativas/pruebas-de-seguimiento-por-telemetria-la-nueva-estrategia-para-conocer-mas-sobre-los-hipopotamos/": {
+"authors": [
+"Cornare"
+],
+"title": "Pruebas de seguimiento por telemetría, la nueva estrategia para conocer más sobre los hipopótamos",
+"journal": "Corporación Autónoma Regional de las Cuencas de los Ríos Negro y Nare",
+"year": 2022,
+"volume": null,
+"issue": null,
+"pages": null
+},
+"url:https://files.parliament.nsw.gov.au/fileapi/ParlFiles/GetArtifact/2019-20%20Annual%20Report%20of%20the%20Taronga%20Conservation%20Society.PDF?serverRelativeUrl=%2Ftp%2Ffiles%2F78901%2F2019-20+Annual+Report+of+the+Taronga+Conservation+Society.PDF": {
+"authors": [
+"Taronga Conservation Society Australia"
+],
+"title": "Annual Report 2019–2020, p. 35",
+"journal": "Parliament of New South Wales",
+"year": 2020,
+"volume": null,
+"issue": null,
+"pages": null
 }
 }

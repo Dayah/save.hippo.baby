@@ -29,8 +29,8 @@ def cite(k):
     v=M[k]; j=clean(v['journal']).split(': The Journal')[0]; vol=''
     if v.get('volume'): vol=f";{v['volume']}"+(f"({v['issue']})" if v.get('issue') else '')+(f":{v['pages']}" if v.get('pages') else '')
     elif v.get('pages'): vol=f":{v['pages']}"
-    href='https://pubmed.ncbi.nlm.nih.gov/'+k[5:]+'/' if k.startswith('pmid:') else 'https://doi.org/'+k[4:]
-    lab='PMID '+k[5:] if k.startswith('pmid:') else k
+    href=k[4:] if k.startswith('url:') else 'https://pubmed.ncbi.nlm.nih.gov/'+k[5:]+'/' if k.startswith('pmid:') else 'https://doi.org/'+k[4:]
+    lab=re.sub(r'^www\.','',k[4:].split('/')[2]) if k.startswith('url:') else 'PMID '+k[5:] if k.startswith('pmid:') else k
     return f"{au(v)+'. ' if au(v) else ''}{clean(v['title'])}. <i>{j}</i>. {v['year']}{vol}. <a href=\"{href}\">{lab}</a>"
 def plain(k):
     v=M[k]; return html.escape(re.sub(r'<[^>]+>','',f"{au(v)}. {html.unescape(clean(v['title']))}. {html.unescape(clean(v['journal']))} {v['year']}."),quote=True)
@@ -38,7 +38,7 @@ def rep(m):
     n=order.index(m.group(1))+1
     return f'&#8288;<sup><a class="ref" href="#r{n}" interestfor="t{n}" title="{plain(m.group(1))}">[{n}]</a></sup>'
 s=re.sub(r'\s*⟦([^⟧]+)⟧',rep,s)
-refs='<h2>References</h2>\n<ol class="refs">\n'+"".join(f'<li id="r{i+1}">{cite(k)}</li>\n' for i,k in enumerate(order))+'</ol>\n\n'
+refs='<h2 class="plain">References</h2>\n<ol class="refs">\n'+"".join(f'<li id="r{i+1}">{cite(k)}</li>\n' for i,k in enumerate(order))+'</ol>\n\n'
 tips="".join(f'<div class="tip" popover="hint" id="t{i+1}">{cite(k)}</div>\n' for i,k in enumerate(order))
 s=s.replace('<footer>',refs+'<footer>',1).replace('</main>',tips+'</main>',1)
 open(p,'w').write(s); print(len(order),'references built')
